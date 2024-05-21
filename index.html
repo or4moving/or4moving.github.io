@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>or4moving - Your TEAM!</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="start-ar">Start AR</button>
+    <a-scene embedded arjs>
+      <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+      <a-entity id="target" material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: <add-your-latitude>; longitude: <add-your-longitude>" scale="10 10 10"></a-entity>
+    </a-scene>
+    <script src="script.js"></script>
+  </body>
+</html>
